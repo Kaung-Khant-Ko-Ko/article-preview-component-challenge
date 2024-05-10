@@ -12,7 +12,14 @@
       href="./images/favicon-32x32.png"
     />
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
 
     <title>Frontend Mentor | Article preview component</title>
   </head>
@@ -20,7 +27,7 @@
     <section id="article-container">
       <img src="./images/drawers.jpg" alt="Drawers image" id="drawers-img" />
       <div id="article-content">
-        <p>
+        <p id="article-header">
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
         </p>
@@ -31,22 +38,47 @@
         </p>
         <div id="author-container">
           <div id="author-content">
-            <img src="./images/avatar-michelle.jpg" alt="Michelle image" id="author-img" />
+            <img
+              src="./images/avatar-michelle.jpg"
+              alt="Michelle image"
+              id="author-img"
+            />
             <div id="author-info">
-              <p>Michelle Appleton</p>
+              <p id="author">Michelle Appleton</p>
               <p>28 Jun 2020</p>
             </div>
           </div>
           <div id="popup-content">
-            <p>Share</p>
-            <img src="./images/icon-facebook.svg" alt="Facebook icon" class="icon" />
-            <img src="./images/icon-twitter.svg" alt="Twitter icon" class="icon" />
-            <img src="./images/icon-pinterest.svg" alt="Pinterest icon" class="icon" />
+            <p id="popup-header">Share</p>
+            <img
+              src="./images/icon-facebook.svg"
+              alt="Facebook icon"
+              class="icon"
+            />
+            <img
+              src="./images/icon-twitter.svg"
+              alt="Twitter icon"
+              class="icon"
+            />
+            <img
+              src="./images/icon-pinterest.svg"
+              alt="Pinterest icon"
+              class="icon"
+            />
           </div>
           <div id="share-icon-container">
-            <img src="./images/icon-share.svg" alt="Share icon" id="share-icon" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="17.33"
+              viewBox="0 0 15 13"
+            >
+              <path
+                fill="#6E8098"
+                d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+              />
+            </svg>
           </div>
-          
         </div>
       </div>
     </section>
